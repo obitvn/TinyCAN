@@ -1,0 +1,10 @@
+/.vscode/
+/build/
+*.o
+*.d
+*.bin
+*.asmo
+*.elf
+*~
+.cache/
+compile_commands.json

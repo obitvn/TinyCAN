@@ -1,3 +1,7 @@
+This project is fork from https://github.com/candle-usb/candleLight_fw
+
+Thanks for HubertD
+
 # candleLight_gsusb
 [![Build](https://github.com/candle-usb/candleLight_fw/actions/workflows/ci.yml/badge.svg)](https://github.com/candle-usb/candleLight_fw/actions)
 
@@ -112,6 +116,19 @@ Name=cannette99
     link/can 
  $
 ```
+
+## Using it with can-utils
+You need install can-utils before 
+``` 
+sudo apt-get install can-utils
+```
+after that
+
+```
+sudo ip link set can0 up type can bitrate 500000  # config baud (500000) and init can0
+sudo ip link set can0 txqueuelen 10000            # set queuelen for tx, if not, you can't using cangen
+```
+
 
 
 ## Links to related projects
